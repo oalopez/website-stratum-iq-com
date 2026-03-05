@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="es" data-lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StratumIQ — Inteligencia de Datos con IA</title>
+  <meta name="description" content="Plataforma de inteligencia de datos potenciada por IA para industrias reguladas. Financiero, Educacion, Turismo.">
+  <meta property="og:title" content="StratumIQ — Inteligencia de Datos con IA">
+  <meta property="og:description" content="Transformamos datos en decisiones. Plataforma de inteligencia de datos potenciada por IA.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/logo.svg">
+  <meta name="twitter:card" content="summary">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+  <!-- ===== NAV ===== -->
+  <nav class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#" class="nav__logo" aria-label="StratumIQ Home">
+        <img src="assets/logo.svg" alt="StratumIQ" width="40" height="32">
+        <span class="nav__brand">StratumIQ</span>
+      </a>
+      <ul class="nav__links" id="navLinks">
+        <li><a href="#plataforma" data-i18n="nav.platform">Plataforma</a></li>
+        <li><a href="#industrias" data-i18n="nav.industries">Industrias</a></li>
+        <li><a href="#tecnologia" data-i18n="nav.technology">Tecnologia</a></li>
+        <li><a href="#contacto" data-i18n="nav.contact">Contacto</a></li>
+      </ul>
+      <div class="nav__actions">
+        <button class="lang-toggle" id="langToggle" aria-label="Switch language">
+          <span class="lang-toggle__label">EN</span>
+        </button>
+        <a href="#contacto" class="btn btn--primary btn--sm nav__cta" data-i18n="nav.cta">Hablemos</a>
+      </div>
+      <button class="nav__hamburger" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <canvas class="hero__canvas" id="heroCanvas"></canvas>
+    <div class="hero__orb hero__orb--1"></div>
+    <div class="hero__orb hero__orb--2"></div>
+    <div class="container hero__content">
+      <span class="badge" data-i18n="hero.badge">Plataforma de Inteligencia de Datos</span>
+      <h1 data-i18n="hero.headline">Transformamos datos<br>en <span class="text-gradient">decisiones.</span></h1>
+      <p class="hero__subtitle" data-i18n="hero.subtitle">Plataforma de inteligencia de datos potenciada por IA para industrias reguladas.</p>
+      <div class="hero__ctas">
+        <a href="#plataforma" class="btn btn--primary btn--lg" data-i18n="hero.cta1">Conocer la plataforma</a>
+        <a href="#contacto" class="btn btn--ghost btn--lg" data-i18n="hero.cta2">Contactar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PLATAFORMA ===== -->
+  <section class="section-platform" id="plataforma">
+    <div class="container">
+      <div class="platform__grid">
+        <div class="platform__text reveal">
+          <span class="section-label" data-i18n="platform.label">Plataforma</span>
+          <h2 data-i18n="platform.title">Inteligencia de datos<br><span class="text-gradient">de extremo a extremo</span></h2>
+          <p data-i18n="platform.desc">StratumIQ conecta fuentes de datos heterogeneas, aplica razonamiento con IA y entrega inteligencia accionable en tiempo real. Una plataforma, multiples industrias.</p>
+          <div class="platform__tags">
+            <span class="tag" data-i18n="platform.tag1">Automatizacion Web</span>
+            <span class="tag" data-i18n="platform.tag2">Razonamiento IA</span>
+            <span class="tag" data-i18n="platform.tag3">Inteligencia Accionable</span>
+          </div>
+        </div>
+        <div class="platform__pipeline reveal">
+          <div class="pipeline">
+            <div class="pipeline__node pipeline__node--source">
+              <div class="pipeline__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 22h14a2 2 0 0 0 2-2V7.5L14.5 2H6a2 2 0 0 0-2 2v4"/><polyline points="14 2 14 8 20 8"/><path d="M2 15h10"/><path d="m9 18 3-3-3-3"/></svg>
+              </div>
+              <span data-i18n="platform.pipe1">Fuentes de Datos</span>
+            </div>
+            <div class="pipeline__connector"><span></span></div>
+            <div class="pipeline__node pipeline__node--engine">
+              <div class="pipeline__icon pipeline__icon--logo">
+                <img src="assets/logo.svg" alt="StratumIQ" width="28" height="22">
+              </div>
+              <span data-i18n="platform.pipe2">Motor StratumIQ</span>
+            </div>
+            <div class="pipeline__connector"><span></span></div>
+            <div class="pipeline__node pipeline__node--output">
+              <div class="pipeline__icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+              </div>
+              <span data-i18n="platform.pipe3">Inteligencia Accionable</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== INDUSTRIAS ===== -->
+  <section class="section-industries" id="industrias">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" data-i18n="industries.label">Industrias</span>
+        <h2 data-i18n="industries.title">Probada en <span class="text-gradient">3 verticales</span></h2>
+        <p data-i18n="industries.desc">Soluciones especializadas para industrias reguladas y de alto impacto.</p>
+      </div>
+      <div class="industries__grid">
+        <!-- Financiero -->
+        <div class="swap-card reveal" tabindex="0">
+          <div class="card card--finance">
+            <div class="card__accent"></div>
+            <div class="swap-card__face swap-card__front">
+              <div class="card__icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent-finance)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              </div>
+              <h3 data-i18n="industries.finance.title">Financiero</h3>
+              <p data-i18n="industries.finance.desc">Compliance automatizado e inteligencia regulatoria para instituciones financieras.</p>
+              <ul class="card__capabilities">
+                <li data-i18n="industries.finance.cap1">Bots de datos financieros</li>
+                <li data-i18n="industries.finance.cap2">Screening AML 42+ listas</li>
+                <li data-i18n="industries.finance.cap3">Riesgo geoespacial</li>
+                <li data-i18n="industries.finance.cap4">Deteccion multi-fuente</li>
+              </ul>
+              <span class="swap-card__hint" data-i18n="industries.flipHint">Click para ver demo</span>
+            </div>
+            <div class="swap-card__face swap-card__back">
+              <div class="chat-demo">
+                <div class="chat-demo__header">
+                  <img src="assets/logo.svg" alt="" width="16" height="13">
+                  <span>StratumIQ Chat</span>
+                  <span class="chat-demo__dot"></span>
+                </div>
+                <div class="chat-demo__messages">
+                  <div class="chat-msg chat-msg--user">
+                    <span data-i18n="industries.finance.q">Necesito verificar a Juan Perez contra listas PEP y sanciones.</span>
+                  </div>
+                  <div class="chat-msg chat-msg--ai">
+                    <span data-i18n="industries.finance.a">Encontre 3 coincidencias en 42+ listas. Riesgo: <strong>ALTO</strong>. 2 alertas PEP activas en OFAC y UE. Recomiendo revision manual inmediata.</span>
+                  </div>
+                </div>
+                <div class="chat-demo__input">
+                  <span data-i18n="industries.chatPlaceholder">Escribe tu consulta...</span>
+                </div>
+              </div>
+              <span class="swap-card__hint" data-i18n="industries.flipBack">Click para volver</span>
+            </div>
+          </div>
+        </div>
+        <!-- Educacion -->
+        <div class="swap-card reveal" tabindex="0">
+          <div class="card card--education">
+            <div class="card__accent"></div>
+            <div class="swap-card__face swap-card__front">
+              <div class="card__icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent-education)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c0 1.1 2.7 3 6 3s6-1.9 6-3v-5"/></svg>
+              </div>
+              <h3 data-i18n="industries.education.title">Educacion</h3>
+              <p data-i18n="industries.education.desc">Analitica educativa conversacional para instituciones de educacion superior.</p>
+              <ul class="card__capabilities">
+                <li data-i18n="industries.education.cap1">IA conversacional</li>
+                <li data-i18n="industries.education.cap2">Analitica en lenguaje natural</li>
+                <li data-i18n="industries.education.cap3">Multi-tenant con permisos</li>
+                <li data-i18n="industries.education.cap4">100+ instituciones</li>
+              </ul>
+              <span class="swap-card__hint" data-i18n="industries.flipHint">Click para ver demo</span>
+            </div>
+            <div class="swap-card__face swap-card__back">
+              <div class="chat-demo">
+                <div class="chat-demo__header">
+                  <img src="assets/logo.svg" alt="" width="16" height="13">
+                  <span>StratumIQ Chat</span>
+                  <span class="chat-demo__dot"></span>
+                </div>
+                <div class="chat-demo__messages">
+                  <div class="chat-msg chat-msg--user">
+                    <span data-i18n="industries.education.q">Cual es la tasa de desercion del programa de Ingenieria?</span>
+                  </div>
+                  <div class="chat-msg chat-msg--ai">
+                    <span data-i18n="industries.education.a">La desercion en Ingenieria es <strong>12.3%</strong> este semestre, 2.1% menor que el anterior. Factores principales: carga academica y financiamiento.</span>
+                  </div>
+                </div>
+                <div class="chat-demo__input">
+                  <span data-i18n="industries.chatPlaceholder">Escribe tu consulta...</span>
+                </div>
+              </div>
+              <span class="swap-card__hint" data-i18n="industries.flipBack">Click para volver</span>
+            </div>
+          </div>
+        </div>
+        <!-- Turismo -->
+        <div class="swap-card reveal" tabindex="0">
+          <div class="card card--tourism">
+            <div class="card__accent"></div>
+            <div class="swap-card__face swap-card__front">
+              <div class="card__icon">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="var(--accent-tourism)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+              </div>
+              <h3 data-i18n="industries.tourism.title">Turismo</h3>
+              <p data-i18n="industries.tourism.desc">Inteligencia turistica y competitiva para destinos y operadores.</p>
+              <ul class="card__capabilities">
+                <li data-i18n="industries.tourism.cap1">Inteligencia turistica</li>
+                <li data-i18n="industries.tourism.cap2">Reportes narrativos LLM</li>
+                <li data-i18n="industries.tourism.cap3">Analisis de sentimiento</li>
+                <li data-i18n="industries.tourism.cap4">Benchmarking competitivo</li>
+              </ul>
+              <span class="swap-card__hint" data-i18n="industries.flipHint">Click para ver demo</span>
+            </div>
+            <div class="swap-card__face swap-card__back">
+              <div class="chat-demo">
+                <div class="chat-demo__header">
+                  <img src="assets/logo.svg" alt="" width="16" height="13">
+                  <span>StratumIQ Chat</span>
+                  <span class="chat-demo__dot"></span>
+                </div>
+                <div class="chat-demo__messages">
+                  <div class="chat-msg chat-msg--user">
+                    <span data-i18n="industries.tourism.q">Como se compara Cartagena vs Santa Marta en satisfaccion?</span>
+                  </div>
+                  <div class="chat-msg chat-msg--ai">
+                    <span data-i18n="industries.tourism.a">Cartagena: <strong>4.2/5</strong> (+0.3 vs Q3). Santa Marta: 3.8/5. Cartagena lidera en gastronomia y vida nocturna. Santa Marta destaca en naturaleza.</span>
+                  </div>
+                </div>
+                <div class="chat-demo__input">
+                  <span data-i18n="industries.chatPlaceholder">Escribe tu consulta...</span>
+                </div>
+              </div>
+              <span class="swap-card__hint" data-i18n="industries.flipBack">Click para volver</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMO FUNCIONA ===== -->
+  <section class="section-how" id="como-funciona">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label" data-i18n="how.label">Como Funciona</span>
+        <h2 data-i18n="how.title">De datos crudos a <span class="text-gradient">inteligencia accionable</span></h2>
+      </div>
+      <div class="how__steps">
+        <div class="how__step reveal">
+          <div class="how__number mono">01</div>
+          <h3 data-i18n="how.step1.title">Fuentes</h3>
+          <p data-i18n="how.step1.desc">Web, APIs, documentos, listas regulatorias. Conectamos cualquier fuente de datos estructurada o no estructurada.</p>
+        </div>
+        <div class="how__connector"><div class="how__line"></div></div>
+        <div class="how__step reveal">
+          <div class="how__number mono">02</div>
+          <h3 data-i18n="how.step2.title">Motor</h3>
+          <p data-i18n="how.step2.desc">Scraping inteligente, NLP, matching difuso, validacion multi-fuente. Procesamiento automatizado con IA.</p>
+        </div>
+        <div class="how__connector"><div class="how__line"></div></div>
+        <div class="how__step reveal">
+          <div class="how__number mono">03</div>
+          <h3 data-i18n="how.step3.title">Salida</h3>
+          <p data-i18n="how.step3.desc">Dashboards, alertas, APIs, reportes narrativos. Inteligencia lista para tomar decisiones.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== METRICAS ===== -->
+  <section class="section-metrics" id="metricas">
+    <div class="container">
+      <div class="metrics__grid">
+        <div class="metric reveal">
+          <span class="metric__number mono" data-target="200" data-suffix="+">0</span>
+          <span class="metric__label" data-i18n="metrics.sources">Fuentes de datos</span>
+        </div>
+        <div class="metric reveal">
+          <span class="metric__number mono" data-target="100" data-suffix="+">0</span>
+          <span class="metric__label" data-i18n="metrics.institutions">Instituciones</span>
+        </div>
+        <div class="metric reveal">
+          <span class="metric__number mono" data-target="4">0</span>
+          <span class="metric__label" data-i18n="metrics.countries">Paises</span>
+        </div>
+        <div class="metric reveal">
+          <span class="metric__number mono" data-target="99.9" data-suffix="%" data-decimals="1">0</span>
+          <span class="metric__label" data-i18n="metrics.uptime">Disponibilidad</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TECNOLOGIA ===== -->
+  <section class="section-tech" id="tecnologia">
+    <div class="container">
+      <div class="tech__grid">
+        <div class="tech__text reveal">
+          <span class="section-label" data-i18n="tech.label">Tecnologia</span>
+          <h2 data-i18n="tech.title">Construida con <span class="text-gradient">tecnologia de punta</span></h2>
+          <p data-i18n="tech.desc">Nuestra plataforma combina las tecnicas mas avanzadas de inteligencia artificial generativa con arquitectura cloud-native para entregar resultados confiables a escala.</p>
+        </div>
+        <div class="tech__badges reveal">
+          <span class="tech-badge">IA Generativa (GenAI)</span>
+          <span class="tech-badge">Machine Learning</span>
+          <span class="tech-badge">NLP</span>
+          <span class="tech-badge">Matching Difuso IA</span>
+          <span class="tech-badge">Automatizacion Web</span>
+          <span class="tech-badge">Procesamiento Real-Time</span>
+          <span class="tech-badge">APIs RESTful</span>
+          <span class="tech-badge">Multi-tenant</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section class="section-contact" id="contacto">
+    <div class="container">
+      <div class="contact__content reveal">
+        <span class="section-label" data-i18n="contact.label">Contacto</span>
+        <h2 data-i18n="contact.title">Hablemos de <span class="text-gradient">sus datos</span></h2>
+        <p data-i18n="contact.desc">Descubra como StratumIQ puede transformar sus datos en ventaja competitiva.</p>
+        <div class="contact__ctas">
+          <a href="mailto:info@fitideas.co" class="btn btn--primary btn--lg" data-i18n="contact.cta">Escribanos</a>
+          <a href="https://www.linkedin.com/company/fit-ideas" target="_blank" rel="noopener noreferrer" class="btn btn--ghost btn--lg">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <div class="footer__logos">
+          <img src="assets/logo.svg" alt="StratumIQ" width="32" height="26">
+          <span>StratumIQ</span>
+        </div>
+        <div class="footer__by">
+          <span data-i18n="footer.by">Un producto de</span>
+          <a href="https://fitideas.ai" target="_blank" rel="noopener noreferrer" class="footer__fitideas">
+            <img src="assets/fitideas-logo.png" alt="Fit Ideas" height="24">
+          </a>
+        </div>
+        <p>&copy; 2026 Fit Ideas SAS</p>
+      </div>
+      <div class="footer__links">
+        <a href="#plataforma" data-i18n="nav.platform">Plataforma</a>
+        <a href="#industrias" data-i18n="nav.industries">Industrias</a>
+        <a href="#tecnologia" data-i18n="nav.technology">Tecnologia</a>
+        <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+      </div>
+      <div class="footer__info">
+        <p>Bogota, Colombia</p>
+        <a href="mailto:info@fitideas.co">info@fitideas.co</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/particles.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

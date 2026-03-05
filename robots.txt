@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://stratumiq.com/sitemap.xml
