@@ -134,17 +134,39 @@
             </div>
             <div class="swap-card__face swap-card__back">
               <div class="chat-demo">
-                <div class="chat-demo__header">
-                  <img src="assets/logo.svg" alt="" width="16" height="13">
-                  <span>StratumIQ Chat</span>
-                  <span class="chat-demo__dot"></span>
-                </div>
                 <div class="chat-demo__messages">
                   <div class="chat-msg chat-msg--user">
-                    <span data-i18n="industries.finance.q">Necesito verificar a Juan Perez contra listas PEP y sanciones.</span>
+                    <span data-i18n="viz.finance.q">Oye, necesito que me revises a un tal Juan Perez en listas PEP y sanciones, por favor</span>
                   </div>
-                  <div class="chat-msg chat-msg--ai">
-                    <span data-i18n="industries.finance.a">Encontre 3 coincidencias en 42+ listas. Riesgo: <strong>ALTO</strong>. 2 alertas PEP activas en OFAC y UE. Recomiendo revision manual inmediata.</span>
+                  <div class="chat-msg chat-msg--ai chat-msg--rich">
+                    <div class="viz-risk">
+                      <div class="viz-risk__gauge">
+                        <svg viewBox="0 0 100 60" width="80" height="48">
+                          <path d="M10 50 A40 40 0 0 1 90 50" fill="none" stroke="rgba(255,255,255,0.08)" stroke-width="8" stroke-linecap="round"/>
+                          <path d="M10 50 A40 40 0 0 1 90 50" fill="none" stroke="url(#riskGrad)" stroke-width="8" stroke-linecap="round" stroke-dasharray="126" stroke-dashoffset="18"/>
+                          <defs><linearGradient id="riskGrad"><stop offset="0%" stop-color="#10b981"/><stop offset="50%" stop-color="#f59e0b"/><stop offset="100%" stop-color="#ef4444"/></linearGradient></defs>
+                        </svg>
+                        <span class="viz-risk__label" data-i18n="viz.finance.risk">ALTO</span>
+                      </div>
+                      <div class="viz-risk__detail" data-i18n="viz.finance.detail">3 coincidencias en 42+ listas</div>
+                    </div>
+                    <div class="viz-table">
+                      <div class="viz-table__row">
+                        <span class="viz-badge viz-badge--red">PEP</span>
+                        <span class="viz-table__name">OFAC SDN</span>
+                        <span class="viz-table__score">98%</span>
+                      </div>
+                      <div class="viz-table__row">
+                        <span class="viz-badge viz-badge--red">PEP</span>
+                        <span class="viz-table__name">EU Sanctions</span>
+                        <span class="viz-table__score">94%</span>
+                      </div>
+                      <div class="viz-table__row">
+                        <span class="viz-badge viz-badge--yellow">REV</span>
+                        <span class="viz-table__name">UN Consolidated</span>
+                        <span class="viz-table__score">72%</span>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div class="chat-demo__input">
@@ -175,17 +197,34 @@
             </div>
             <div class="swap-card__face swap-card__back">
               <div class="chat-demo">
-                <div class="chat-demo__header">
-                  <img src="assets/logo.svg" alt="" width="16" height="13">
-                  <span>StratumIQ Chat</span>
-                  <span class="chat-demo__dot"></span>
-                </div>
                 <div class="chat-demo__messages">
                   <div class="chat-msg chat-msg--user">
-                    <span data-i18n="industries.education.q">Cual es la tasa de desercion del programa de Ingenieria?</span>
+                    <span data-i18n="viz.education.q">Como va la desercion este semestre? Quiero ver todos los programas comparados</span>
                   </div>
-                  <div class="chat-msg chat-msg--ai">
-                    <span data-i18n="industries.education.a">La desercion en Ingenieria es <strong>12.3%</strong> este semestre, 2.1% menor que el anterior. Factores principales: carga academica y financiamiento.</span>
+                  <div class="chat-msg chat-msg--ai chat-msg--rich">
+                    <div class="viz-bars">
+                      <div class="viz-bars__item">
+                        <div class="viz-bars__label" data-i18n="viz.education.eng">Ingenieria</div>
+                        <div class="viz-bars__track"><div class="viz-bars__fill viz-bars__fill--green" style="width:41%"></div></div>
+                        <div class="viz-bars__value">12.3% <span class="viz-trend viz-trend--down">-2.1</span></div>
+                      </div>
+                      <div class="viz-bars__item">
+                        <div class="viz-bars__label" data-i18n="viz.education.law">Derecho</div>
+                        <div class="viz-bars__track"><div class="viz-bars__fill viz-bars__fill--yellow" style="width:57%"></div></div>
+                        <div class="viz-bars__value">17.1% <span class="viz-trend viz-trend--up">+0.8</span></div>
+                      </div>
+                      <div class="viz-bars__item">
+                        <div class="viz-bars__label" data-i18n="viz.education.med">Medicina</div>
+                        <div class="viz-bars__track"><div class="viz-bars__fill viz-bars__fill--green" style="width:17%"></div></div>
+                        <div class="viz-bars__value">5.2% <span class="viz-trend viz-trend--down">-1.3</span></div>
+                      </div>
+                      <div class="viz-bars__item">
+                        <div class="viz-bars__label">Admin.</div>
+                        <div class="viz-bars__track"><div class="viz-bars__fill viz-bars__fill--red" style="width:72%"></div></div>
+                        <div class="viz-bars__value">21.7% <span class="viz-trend viz-trend--up">+3.4</span></div>
+                      </div>
+                    </div>
+                    <div class="viz-insight" data-i18n="viz.education.insight">Factor #1: carga academica (43%)</div>
                   </div>
                 </div>
                 <div class="chat-demo__input">
@@ -216,17 +255,53 @@
             </div>
             <div class="swap-card__face swap-card__back">
               <div class="chat-demo">
-                <div class="chat-demo__header">
-                  <img src="assets/logo.svg" alt="" width="16" height="13">
-                  <span>StratumIQ Chat</span>
-                  <span class="chat-demo__dot"></span>
-                </div>
                 <div class="chat-demo__messages">
                   <div class="chat-msg chat-msg--user">
-                    <span data-i18n="industries.tourism.q">Como se compara Cartagena vs Santa Marta en satisfaccion?</span>
+                    <span data-i18n="viz.tourism.q">Que tan satisfechos estan los turistas en Cartagena comparado con Santa Marta?</span>
                   </div>
-                  <div class="chat-msg chat-msg--ai">
-                    <span data-i18n="industries.tourism.a">Cartagena: <strong>4.2/5</strong> (+0.3 vs Q3). Santa Marta: 3.8/5. Cartagena lidera en gastronomia y vida nocturna. Santa Marta destaca en naturaleza.</span>
+                  <div class="chat-msg chat-msg--ai chat-msg--rich">
+                    <div class="viz-compare">
+                      <div class="viz-compare__col">
+                        <span class="viz-compare__city">Cartagena</span>
+                        <span class="viz-compare__score viz-compare__score--high">4.2</span>
+                        <span class="viz-compare__max">/5</span>
+                        <span class="viz-trend viz-trend--up">+0.3</span>
+                      </div>
+                      <span class="viz-compare__vs">vs</span>
+                      <div class="viz-compare__col">
+                        <span class="viz-compare__city">Santa Marta</span>
+                        <span class="viz-compare__score">3.8</span>
+                        <span class="viz-compare__max">/5</span>
+                        <span class="viz-trend viz-trend--down">-0.1</span>
+                      </div>
+                    </div>
+                    <div class="viz-radar">
+                      <div class="viz-radar__row">
+                        <span class="viz-radar__cat" data-i18n="viz.tourism.gastro">Gastronomia</span>
+                        <div class="viz-radar__dual">
+                          <div class="viz-radar__bar viz-radar__bar--a" style="width:90%"></div>
+                          <div class="viz-radar__bar viz-radar__bar--b" style="width:60%"></div>
+                        </div>
+                      </div>
+                      <div class="viz-radar__row">
+                        <span class="viz-radar__cat" data-i18n="viz.tourism.nature">Naturaleza</span>
+                        <div class="viz-radar__dual">
+                          <div class="viz-radar__bar viz-radar__bar--a" style="width:50%"></div>
+                          <div class="viz-radar__bar viz-radar__bar--b" style="width:95%"></div>
+                        </div>
+                      </div>
+                      <div class="viz-radar__row">
+                        <span class="viz-radar__cat">Nightlife</span>
+                        <div class="viz-radar__dual">
+                          <div class="viz-radar__bar viz-radar__bar--a" style="width:85%"></div>
+                          <div class="viz-radar__bar viz-radar__bar--b" style="width:40%"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="viz-radar__legend">
+                      <span class="viz-radar__leg viz-radar__leg--a">CTG</span>
+                      <span class="viz-radar__leg viz-radar__leg--b">SMA</span>
+                    </div>
                   </div>
                 </div>
                 <div class="chat-demo__input">
